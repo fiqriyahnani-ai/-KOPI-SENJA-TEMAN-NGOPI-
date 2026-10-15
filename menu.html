@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Kopi Senja</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="index.html">☕ Kopi Senja</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a class="aktif" href="menu.html">Menu</a>
+  </nav>
+  <a class="pesan" href="#keranjang">🛒 Pesan Sekarang</a>
+</header>
+
+<section class="banner">
+  <div class="banner-teks">
+    <span>MENU KAMI</span>
+    <h1>Pilihan Minuman &amp; Makanan</h1>
+    <p>Nikmati berbagai varian kopi, makanan lezat, dan roti pilihan yang kami sajikan dengan sepenuh hati.</p>
+  </div>
+</section>
+
+<main class="konten">
+
+  <div class="filter-menu">
+    <button class="filter-btn active" data-filter="all">Semua</button>
+    <button class="filter-btn" data-filter="kopi">☕ Kopi</button>
+    <button class="filter-btn" data-filter="minuman">🥤 Minuman Nonkopi</button>
+    <button class="filter-btn" data-filter="makanan">🍽️ Makanan</button>
+    <button class="filter-btn" data-filter="roti">🥐 Roti &amp; Pastry</button>
+  </div>
+
+  <section class="menu-grid" id="daftar-menu">
+
+    <!-- MENU KOPI -->
+
+    <article class="menu-card" data-category="kopi">
+      <img src="https://images.unsplash.com/photo-1517959105821-eaf2591984ca?auto=format&fit=crop&w=700&q=80" alt="Americano">
+      <div class="menu-info">
+        <h3>Americano</h3>
+        <p>Kopi hitam dengan cita rasa khas.</p>
+        <div class="menu-bawah">
+          <strong>Rp 15.000</strong>
+          <button class="btn-tambah" data-name="Americano" data-price="15000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="kopi">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Latte">
+      <div class="menu-info">
+        <h3>Latte</h3>
+        <p>Espresso dan susu dengan rasa lembut.</p>
+        <div class="menu-bawah">
+          <strong>Rp 18.000</strong>
+          <button class="btn-tambah" data-name="Latte" data-price="18000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="kopi">
+      <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=80" alt="Cappuccino">
+      <div class="menu-info">
+        <h3>Cappuccino</h3>
+        <p>Espresso dengan susu berbusa lembut.</p>
+        <div class="menu-bawah">
+          <strong>Rp 18.000</strong>
+          <button class="btn-tambah" data-name="Cappuccino" data-price="18000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="kopi">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Es Kopi Susu Senja">
+      <div class="menu-info">
+        <h3>Es Kopi Susu Senja</h3>
+        <p>Espresso, susu creamy, dan gula aren.</p>
+        <div class="menu-bawah">
+          <strong>Rp 18.000</strong>
+          <button class="btn-tambah" data-name="Es Kopi Susu Senja" data-price="18000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="kopi">
+      <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" alt="Cafe Mocha">
+      <div class="menu-info">
+        <h3>Cafe Mocha</h3>
+        <p>Perpaduan espresso, susu, dan cokelat.</p>
+        <div class="menu-bawah">
+          <strong>Rp 22.000</strong>
+          <button class="btn-tambah" data-name="Cafe Mocha" data-price="22000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- MENU MINUMAN NONKOPI -->
+
+    <article class="menu-card" data-category="minuman">
+      <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" alt="Es Teh">
+      <div class="menu-info">
+        <h3>Es Teh </h3>
+        <p>Teh segar dengan perpaduan manis yang pas.</p>
+        <div class="menu-bawah">
+          <strong>Rp 12.000</strong>
+          <button class="btn-tambah" data-name="Es Teh Lemon" data-price="12000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="minuman">
+      <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=600&q=80" alt="Strawberry Smoothie">
+      <div class="menu-info">
+        <h3>Strawberry Smoothie</h3>
+        <p>Minuman stroberi yang segar dan lembut.</p>
+        <div class="menu-bawah">
+          <strong>Rp 20.000</strong>
+          <button class="btn-tambah" data-name="Strawberry Smoothie" data-price="20000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="minuman">
+      <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte">
+      <div class="menu-info">
+        <h3>Matcha Latte</h3>
+        <p>erpaduan matcha khas Jepang dan susu creamy yang lembut.</p>
+        <div class="menu-bawah">
+          <strong>Rp 21.000</strong>
+          <button class="btn-tambah" data-name="Matcha Latte" data-price="21000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="minuman">
+      <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Es Cokelat">
+      <div class="menu-info">
+        <h3>Es Cokelat</h3>
+        <p>Minuman cokelat manis dengan susu.</p>
+        <div class="menu-bawah">
+          <strong>Rp 17.000</strong>
+          <button class="btn-tambah" data-name="Es Cokelat" data-price="17000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- MENU MAKANAN -->
+
+    <article class="menu-card" data-category="makanan">
+      <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=80" alt="Nasi Goreng Spesial">
+      <div class="menu-info">
+        <h3>Nasi Goreng Spesial</h3>
+        <p>Nasi goreng dengan telur dan sayuran.</p>
+        <div class="menu-bawah">
+          <strong>Rp 18.000</strong>
+          <button class="btn-tambah" data-name="Nasi Goreng Spesial" data-price="18000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="makanan">
+      <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=80" alt="Mie Ayam">
+      <div class="menu-info">
+        <h3>Mie Ayam</h3>
+        <p>Mie dengan topping ayam kecap yang gurih.</p>
+        <div class="menu-bawah">
+          <strong>Rp 16.000</strong>
+          <button class="btn-tambah" data-name="Mie Ayam" data-price="16000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="makanan">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ayam%20geprek.png" alt="Ayam Geprek">
+      <div class="menu-info">
+        <h3>Ayam Geprek</h3>
+        <p>Ayam crispy dengan sambal pedas.</p>
+        <div class="menu-bawah">
+          <strong>Rp 20.000</strong>
+          <button class="btn-tambah" data-name="Ayam Geprek" data-price="20000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="makanan">
+      <img src="https://www.cookerru.com/wp-content/uploads/2020/08/chicken-katsu-curry-1-recipe-new.jpg" alt="Chicken Katsu">
+      <div class="menu-info">
+        <h3>Chicken Katsu</h3>
+        <p>Ayam katsu renyah dengan saus spesial.</p>
+        <div class="menu-bawah">
+          <strong>Rp 22.000</strong>
+          <button class="btn-tambah" data-name="Chicken Katsu" data-price="22000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="makanan">
+      <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Kentang Goreng">
+      <div class="menu-info">
+        <h3>Kentang Goreng</h3>
+        <p>Kentang goreng renyah dengan saus.</p>
+        <div class="menu-bawah">
+          <strong>Rp 12.000</strong>
+          <button class="btn-tambah" data-name="Kentang Goreng" data-price="12000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="makanan">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Beef Burger">
+      <div class="menu-info">
+        <h3>Beef Burger</h3>
+        <p>Burger daging sapi dengan sayuran dan saus.</p>
+        <div class="menu-bawah">
+          <strong>Rp 25.000</strong>
+          <button class="btn-tambah" data-name="Beef Burger" data-price="25000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="makanan">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="Pizza Mini">
+      <div class="menu-info">
+        <h3>Pizza Mini</h3>
+        <p>Pizza dengan keju dan topping pilihan.</p>
+        <div class="menu-bawah">
+          <strong>Rp 20.000</strong>
+          <button class="btn-tambah" data-name="Pizza Mini" data-price="20000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- MENU ROTI DAN PASTRY -->
+
+    <article class="menu-card" data-category="roti">
+      <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" alt="Croissant Butter">
+      <div class="menu-info">
+        <h3>Croissant Butter</h3>
+        <p>Pastry berlapis yang renyah dan harum mentega.</p>
+        <div class="menu-bawah">
+          <strong>Rp 15.000</strong>
+          <button class="btn-tambah" data-name="Croissant Butter" data-price="15000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="roti">
+      <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?auto=format&fit=crop&w=700&q=80" alt="Cake Cokelat">
+      <div class="menu-info">
+        <h3>Cake </h3>
+        <p>Kue lembut dengan rasa manis.</p>
+        <div class="menu-bawah">
+          <strong>Rp 12.000</strong>
+          <button class="btn-tambah" data-name="Cake Cokelat" data-price="12000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="roti">
+      <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Brownies Cokelat">
+      <div class="menu-info">
+        <h3>Brownies Cokelat</h3>
+        <p>Brownies cokelat lembut dengan rasa cokelat yang kaya.</p>
+        <div class="menu-bawah">
+          <strong>Rp 20.000</strong>
+          <button class="btn-tambah" data-name="Donat Cokelat" data-price="10000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="roti">
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Roti Bakar Cokelat">
+      <div class="menu-info">
+        <h3>Roti Bakar Cokelat</h3>
+        <p>Roti panggang dengan isian cokelat manis.</p>
+        <div class="menu-bawah">
+          <strong>Rp 12.000</strong>
+          <button class="btn-tambah" data-name="Roti Bakar Cokelat" data-price="12000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="roti">
+      <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=700&q=80" alt="Cinnamon Roll">
+      <div class="menu-info">
+        <h3>Cinnamon Roll</h3>
+        <p>Roti gulung manis dengan aroma kayu manis.</p>
+        <div class="menu-bawah">
+          <strong>Rp 16.000</strong>
+          <button class="btn-tambah" data-name="Cinnamon Roll" data-price="16000">+ Tambah</button>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- KERANJANG PESANAN -->
+
+  <section class="keranjang" id="keranjang">
+    <div class="judul-keranjang">
+      <span>☕</span>
+      <h2>Keranjang Pesanan</h2>
+    </div>
+
+    <div class="isi-keranjang" id="isi-keranjang">
+      <p class="kosong">Keranjang masih kosong.</p>
+    </div>
+
+    <div class="ringkasan">
+      <p>Jumlah item <strong id="jumlah-item">0</strong></p>
+      <p>Total <strong id="total-harga">Rp 0</strong></p>
+      <button id="kosongkan" type="button">Kosongkan</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <h2>☕ Kopi Senja</h2>
+  <p>Teman Ngopi di Setiap Cerita ♡</p>
+</footer>
+
+</body>
+</html>
